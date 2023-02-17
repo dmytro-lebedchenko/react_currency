@@ -5,9 +5,7 @@ type Props = {
 };
 
 export const ErrorNotification: React.FC<Props> = ({ error }) => (
-  <h1
-    className="error-notification"
-  >
+  <h1 className="error-notification">
     {`...${error}...`}
   </h1>
 );

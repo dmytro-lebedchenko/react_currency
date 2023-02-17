@@ -95,22 +95,6 @@ export const ConvertorItem: React.FC<Props> = ({ type, isSwapped }) => {
     setInputValue(value);
   };
 
-  const handleUpdate = () => {
-    if (type === 'change') {
-      const rate = getCurrencyRate(from.selectorValue, to.selectorValue);
-      const valueByRate = getNormalizedCurrency(+from.inputValue * rate);
-
-      if (!isSwapped) {
-        dispatch(setInputFrom(inputValue));
-      } else {
-        setInputValue(to.inputValue);
-        dispatch(setInputFrom(from.inputValue));
-      }
-
-      dispatch(setInputTo(valueByRate));
-    }
-  };
-
   const selectValueCondition = (type === 'change')
     ? from.selectorValue.ccy
     : to.selectorValue.ccy;
@@ -120,6 +104,22 @@ export const ConvertorItem: React.FC<Props> = ({ type, isSwapped }) => {
     : {cursor:'default'};
 
   useEffect(() => {
+    const handleUpdate = () => {
+      if (type === 'change') {
+        const rate = getCurrencyRate(from.selectorValue, to.selectorValue);
+        const valueByRate = getNormalizedCurrency(+from.inputValue * rate);
+  
+        if (!isSwapped) {
+          dispatch(setInputFrom(inputValue));
+        } else {
+          setInputValue(to.inputValue);
+          dispatch(setInputFrom(from.inputValue));
+        }
+  
+        dispatch(setInputTo(valueByRate));
+      }
+    };
+
     handleUpdate();
   }, [
     selected,
@@ -133,6 +133,11 @@ export const ConvertorItem: React.FC<Props> = ({ type, isSwapped }) => {
     to.selectorValue.buy,
     from.selectorValue.sale,
     to.selectorValue.sale,
+    type,
+    from.selectorValue,
+    to.selectorValue,
+    isSwapped,
+    dispatch,
   ]);
 
   return (

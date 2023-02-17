@@ -22,8 +22,6 @@
 }
 
 .header {
-  @extend %h1-text;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,12 +32,12 @@
   box-shadow: inset 3px 47px 35px -58px rgba(23, 32, 49, 0.28),
     -7px 5px 5px rgba(23, 32, 49, 0.14);
   background-color: $color-primary;
+
+  @extend %h1-text;
   color: $color-white;
 }
 
 .footer {
-  @extend %h1-text;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,6 +47,8 @@
   box-shadow: inset 3px 47px 35px -58px rgba(23, 32, 49, 0.28),
     -7px 5px 5px rgba(23, 32, 49, 0.14);
   background-color: $color-primary;
+
+  @extend %h1-text;
   color: $color-white;
 
   &__link {

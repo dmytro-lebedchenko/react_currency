@@ -37,34 +37,12 @@ export const Cell: React.FC<Props> = ({ item, type }) => {
 
   const cellField = useRef<HTMLInputElement>(null);
 
-  const handleValidation = () => {
-    const validateIndex = +initCellValue * 0.1;
-    const positiveValid = (+cellValue - +initCellValue) >= validateIndex;
-    const negativeValid = (+initCellValue - +cellValue) >= validateIndex;
-
-    const validateParam = positiveValid || negativeValid;
-
-    return (!validateParam)
-      ? setValid(false)
-      : setValid(true);
-  };
-
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
 
     if (value !== cellValue) {
       setCellValue(value);
     }
-  };
-
-  const handleOnKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {
-    if (event.key === 'Escape') {
-      setIsClicked(false);
-    };
-
-    if (event.key === 'Enter') {
-      handleBlur();
-    };
   };
 
   const handleUpdateCurrency = (type: CurrencyType) => {
@@ -97,14 +75,36 @@ export const Cell: React.FC<Props> = ({ item, type }) => {
     setIsClicked(false);
   };
 
+  const handleOnKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === 'Escape') {
+      setIsClicked(false);
+    };
+
+    if (event.key === 'Enter') {
+      handleBlur();
+    };
+  };
+
   const handleClose = () => {
     setIsClicked(false);
     setCellValue(initCellValue);
   };
 
   useEffect(() => {
+    const handleValidation = () => {
+      const validateIndex = +initCellValue * 0.1;
+      const positiveValid = (+cellValue - +initCellValue) >= validateIndex;
+      const negativeValid = (+initCellValue - +cellValue) >= validateIndex;
+  
+      const validateParam = positiveValid || negativeValid;
+  
+      return (!validateParam)
+        ? setValid(false)
+        : setValid(true);
+    };
+
     handleValidation();
-  }, [cellValue]);
+  }, [cellValue, initCellValue]);
 
   useEffect(() => {
     if (cellField.current) {
