@@ -1,0 +1,29 @@
+@import "../../styles/main.scss";
+
+table, th, td {
+  border: 2px solid;
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: middle;
+}
+
+th {
+  background-color: $color-lightblue;
+}
+
+.table {
+  margin-bottom: 40px;
+
+  &__header-cell {
+    padding: 10px;
+    min-width: 110px;
+
+    &--double {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+      border: transparent;
+    }
+  }
+}

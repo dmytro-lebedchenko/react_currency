@@ -1,0 +1,33 @@
+@import "../../styles/main.scss";
+
+.convertor-item {
+  display: flex;
+  align-items: end;
+  box-sizing: border-box;
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+
+  &__input-title {
+    margin-bottom: 6px;
+  }
+
+  &__input-value {
+    padding-left: 10px;
+    box-sizing: border-box;
+    height: 46px;
+    outline: none;
+
+    @extend %body-text;
+    color: $color-primary;
+  }
+
+  &__selector {
+    height: 46px;
+    outline: none;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,12 @@
+@import "../../styles/main.scss";
+
+.error-notification {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  padding-top: 40px;
+
+  font-size: 30px;
+  font-weight: 700;
+  color: $color-primary;
+}

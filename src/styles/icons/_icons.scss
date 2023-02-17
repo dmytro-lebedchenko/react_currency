@@ -1,0 +1,21 @@
+.icon {
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__swap {
+    background-image: url(../../images/icons/swap.svg);
+  }
+
+  &__save {
+    background-image: url(../../images/icons/tick.svg);
+  }
+
+  &__close {
+    background-image: url(../../images/icons/close.svg);
+  }
+
+  &__pencil {
+    background-image: url(../../images/icons/pencil.svg);
+  }
+}

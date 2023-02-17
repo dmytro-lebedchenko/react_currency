@@ -1,0 +1,63 @@
+@import "./styles/main.scss";
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+
+  @extend %body-text;
+  color: $color-primary;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  @extend %h1-text;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: $header-height;
+  padding: 20px;
+
+  box-sizing: border-box;
+  box-shadow: inset 3px 47px 35px -58px rgba(23, 32, 49, 0.28),
+    -7px 5px 5px rgba(23, 32, 49, 0.14);
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+.footer {
+  @extend %h1-text;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: $footer-height;
+  box-sizing: border-box;
+  box-shadow: inset 3px 47px 35px -58px rgba(23, 32, 49, 0.28),
+    -7px 5px 5px rgba(23, 32, 49, 0.14);
+  background-color: $color-primary;
+  color: $color-white;
+
+  &__link {
+    color: $color-secondary;
+    text-decoration: none;
+    transition: color 0.5s;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
