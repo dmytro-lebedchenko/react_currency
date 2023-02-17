@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react_currency/static/css/main.313f7f5f.css",
+    "main.js": "/react_currency/static/js/main.de8f318b.js",
+    "static/media/not_found.gif": "/react_currency/static/media/not_found.181c5a6430bcb77324b1.gif",
+    "static/media/Mont-Regular.otf": "/react_currency/static/media/Mont-Regular.1d26d89f7339866d3133.otf",
+    "static/media/Mont-SemiBold.otf": "/react_currency/static/media/Mont-SemiBold.8979d71a3146ca1d761f.otf",
+    "static/media/Mont-Bold.otf": "/react_currency/static/media/Mont-Bold.03c8c2f6127c1da0fc39.otf",
+    "static/media/pencil.svg": "/react_currency/static/media/pencil.da5e6d8f4c6c126e2cd8.svg",
+    "static/media/swap.svg": "/react_currency/static/media/swap.97b116cb442b4f5d0ea8.svg",
+    "index.html": "/react_currency/index.html",
+    "static/media/close.svg": "/react_currency/static/media/close.6ee9b1485a5c94be2bb9.svg",
+    "static/media/tick.svg": "/react_currency/static/media/tick.71615980040e8f4e08d0.svg",
+    "main.313f7f5f.css.map": "/react_currency/static/css/main.313f7f5f.css.map",
+    "main.de8f318b.js.map": "/react_currency/static/js/main.de8f318b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.313f7f5f.css",
+    "static/js/main.de8f318b.js"
+  ]
+}
