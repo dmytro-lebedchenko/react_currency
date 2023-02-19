@@ -13,3 +13,9 @@
   - BEM;
   - FETCH;
   - localStorage;
+
+3. <b>How to run my project locally: </b> <br>
+  - npm i
+  - npm start
+  - open your browser at http://localhost:3000/#/
+  

@@ -16,7 +16,6 @@ th {
 
   &__header-cell {
     padding: 10px;
-    min-width: 110px;
 
     &--double {
       display: flex;
@@ -24,6 +23,7 @@ th {
       justify-content: center;
       padding: 10px;
       border: transparent;
+      min-width: 80px;
     }
   }
 }
