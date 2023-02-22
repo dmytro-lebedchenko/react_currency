@@ -4,14 +4,17 @@ const BASE_URL = "https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid
 
 async function request<T>(): Promise<T> {
   const response = await fetch(
-    `https://api.allorigins.win/raw?url=${encodeURIComponent(BASE_URL)}`
+    `https://api.allorigins.win/get?url=${encodeURIComponent(BASE_URL)}`
   );
 
   if (!response.ok) {
     throw new Error();
   }
 
-  return response.json();
+  const data = await response.json();
+  const content = data.contents;
+
+  return JSON.parse(content);
 }
 
 export const getCurrency = () => request<Currency[]>();

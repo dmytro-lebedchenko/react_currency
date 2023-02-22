@@ -18,4 +18,3 @@
   - npm i
   - npm start
   - open your browser at http://localhost:3000/#/
-  
