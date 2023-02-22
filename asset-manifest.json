@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react_currency/static/css/main.f294a437.css",
-    "main.js": "/react_currency/static/js/main.97e5a718.js",
+    "main.js": "/react_currency/static/js/main.75aec8a9.js",
     "static/media/not_found.gif": "/react_currency/static/media/not_found.181c5a6430bcb77324b1.gif",
     "static/media/Mont-Regular.otf": "/react_currency/static/media/Mont-Regular.1d26d89f7339866d3133.otf",
     "static/media/Mont-SemiBold.otf": "/react_currency/static/media/Mont-SemiBold.8979d71a3146ca1d761f.otf",
@@ -12,10 +12,10 @@
     "static/media/close.svg": "/react_currency/static/media/close.6ee9b1485a5c94be2bb9.svg",
     "static/media/tick.svg": "/react_currency/static/media/tick.71615980040e8f4e08d0.svg",
     "main.f294a437.css.map": "/react_currency/static/css/main.f294a437.css.map",
-    "main.97e5a718.js.map": "/react_currency/static/js/main.97e5a718.js.map"
+    "main.75aec8a9.js.map": "/react_currency/static/js/main.75aec8a9.js.map"
   },
   "entrypoints": [
     "static/css/main.f294a437.css",
-    "static/js/main.97e5a718.js"
+    "static/js/main.75aec8a9.js"
   ]
 }
